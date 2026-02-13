@@ -7,7 +7,7 @@ int main(void) {
 
     for(size_t i = 0; i < matriz_rows(matriz); i++){
         for(size_t j = 0; j < matriz_cols(matriz); j++){
-            matriz_set(matriz, i, j, i * matriz_cols(matriz) + j + 1);
+            matriz_set(matriz, i, j, i + j/10);
         }
     }
 
